@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak Kami</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kontak.css">
+</head>
+<style>
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset dan Font Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url(../images/bg3.jpg);
+
+}
+
+/* Navbar & Menu */
+.navigasi {
+     width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.logo {
+    width: 10%;
+    float: left;
+}
+
+.menu {
+    line-height: 60px;
+    background-color: #FFF3E4;
+
+
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+    color: #3E2723;
+}
+a {
+    color: #D97B38;
+    text-decoration: none;
+}
+
+
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #f8bbd0;
+    box-shadow: 0 4px 20px rgba(240, 98, 146, 0.2);
+}
+.img-responsive {
+    width: 100%;
+}
+.img-curve {
+    border-radius: 15px;
+}
+
+/* Judul Halaman */
+
+h2 {
+    text-align: center;
+    color: #c2185b;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Form Section */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #880e4f;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #f8bbd0;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    background-color: #fff0f5;
+    transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ec407a;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Tombol */
+.btn {
+    padding: 12px 20px;
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background-color: #d81b60;
+}
+
+/* Informasi Kontak */
+.info-section {
+    margin-top: 40px;
+}
+.info-section h3 {
+    color: #ad1457;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.info-section p {
+    font-size: 1rem;
+    color: #4e4e4e;
+    margin-bottom: 10px;
+}
+.info-section strong {
+    color: #c2185b;
+}
+
+
+/* Utility */
+.text-right { text-align: right; }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+</style>
+<body>
+
+  <!-- Navbar Section Starts Here -->
+  <section class="navbar">
+        <div class="navigasi">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logo_titem.jpg" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="informasi.html">Informasi</a>
+                    </li>
+                    <li>
+                        <a href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+  
+  <!-- Navbar Section Ends Here -->
+
+  <!-- Konten Utama -->
+  <div class="container">
+    <h2>Komentar Anda</h2>
+
+    <div class="form-section">
+      <form action="#" method="POST">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+        <label for="subjek">Subjek</label>
+        <input type="text" id="subjek" name="subjek" placeholder="Judul pesan" required>
+
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+    </div>
+
+    <div class="info-section">
+      <h3>Informasi Kontak</h3>
+      <p><strong>Alamat:</strong> Jl. Ronggowarsito No. 67 Pejagoan Kebumen (Depan Kampus UPB Kebumen)</p>
+      <p><strong>Instagram:</strong> titiptemani_kebumen</p>
+      <p><strong>Telepon:</strong> (0895378237973)</p>
+      <p><strong>Jam Operasional:</strong> Setiap Hari, 11.00 - 21.00 WIB</p>
+    </div>
+  </div>
+
+</body>
+</html>

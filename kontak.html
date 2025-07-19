@@ -1,244 +1,444 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kontak Kami</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="kontak.css">
-</head>
-<style>
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Kami</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    /* Import Google Font */
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
-/* Reset dan Font Global */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', Arial, sans-serif;
-    background-image: url(../images/bg3.jpg);
+    /* Reset dan Font Global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
 
-}
+    body {
+      background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80);
+      background-size: cover;
+      background-attachment: fixed;
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
 
-/* Navbar & Menu */
-.navigasi {
-     width: 80%;
-    margin: 0 auto;
-    padding: 1%;
-}
-.logo {
-    width: 10%;
-    float: left;
-}
+    /* Navbar & Menu */
+    .navigasi {
+      width: 80%;
+      margin: 0 auto;
+      padding: 1%;
+      background-color: #fff3e4;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      width: 10%;
+      float: left;
+    }
 
-.menu {
-    line-height: 60px;
-    background-color: #FFF3E4;
-
-
-}
-
-.menu ul {
-    list-style-type: none;
-}
-
-.menu ul li {
-    display: inline;
-    padding: 1%;
-    font-weight: bold;
-    color: #3E2723;
-}
-a {
-    color: #D97B38;
-    text-decoration: none;
-}
-
-
-
-/* Container */
-.container {
-    width: 80%;
-    max-width: 700px;
-    margin: 30px auto;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 15px;
-    border: 1px solid #f8bbd0;
-    box-shadow: 0 4px 20px rgba(240, 98, 146, 0.2);
-}
-.img-responsive {
-    width: 100%;
-}
-.img-curve {
-    border-radius: 15px;
-}
-
-/* Judul Halaman */
-
-h2 {
-    text-align: center;
-    color: #c2185b;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-/* Form Section */
-.form-section form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-    color: #880e4f;
-    font-weight: 500;
-}
-
-input,
-textarea {
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #f8bbd0;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    background-color: #fff0f5;
-    transition: border 0.3s;
-}
-
-input:focus,
-textarea:focus {
-    border-color: #ec407a;
-    outline: none;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-/* Tombol */
-.btn {
-    padding: 12px 20px;
-    background-color: #ec407a;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-.btn:hover {
-    background-color: #d81b60;
-}
-
-/* Informasi Kontak */
-.info-section {
-    margin-top: 40px;
-}
-.info-section h3 {
-    color: #ad1457;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-.info-section p {
-    font-size: 1rem;
-    color: #4e4e4e;
-    margin-bottom: 10px;
-}
-.info-section strong {
-    color: #c2185b;
-}
-
-
-/* Utility */
-.text-right { text-align: right; }
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
     .menu {
+      line-height: 60px;
+    }
+
+    .menu ul {
+      list-style-type: none;
+    }
+
+    .menu ul li {
+      display: inline;
+      padding: 1%;
+      font-weight: bold;
+      color: #3e2723;
+    }
+    a {
+      color: #d97b38;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    a:hover {
+      color: #c2185b;
+      text-decoration: underline;
+    }
+
+    /* Container */
+    .container {
+      width: 80%;
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      border: 1px solid #f8bbd0;
+      box-shadow: 0 4px 20px rgba(240, 98, 146, 0.2);
+    }
+    .img-responsive {
+      width: 100%;
+    }
+    .img-curve {
+      border-radius: 15px;
+    }
+
+    /* Judul Halaman */
+    h2 {
+      text-align: center;
+      color: #c2185b;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    /* Form Section */
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      color: #880e4f;
+      font-weight: 500;
+    }
+
+    input,
+    textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #f8bbd0;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      background-color: #fff0f5;
+      transition: border 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #ec407a;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    /* Tombol */
+    .btn {
+      padding: 12px 20px;
+      background-color: #ec407a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #d81b60;
+    }
+
+    /* Informasi Kontak */
+    .info-section {
+      margin-top: 40px;
+    }
+    .info-section h3 {
+      color: #ad1457;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+    .info-section p {
+      font-size: 1rem;
+      color: #4e4e4e;
+      margin-bottom: 10px;
+    }
+    .info-section strong {
+      color: #c2185b;
+    }
+
+    /* Section untuk menampilkan komentar */
+    .comments-section {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid #f8bbd0;
+    }
+    .comments-section h3 {
+      color: #ad1457;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .comment-card {
+      background-color: #fff0f5;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #ec407a;
+    }
+
+    .comment-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .comment-name {
+      font-weight: bold;
+      color: #c2185b;
+      font-size: 1.1rem;
+    }
+
+    .comment-date {
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .comment-subject {
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .comment-text {
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .empty-comment {
+      text-align: center;
+      color: #888;
+      font-style: italic;
+      padding: 20px;
+      border: 1px dashed #f8bbd0;
+      border-radius: 10px;
+    }
+
+    /* Utility */
+    .text-right {
+      text-align: right;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .menu {
         float: none;
         text-align: center;
         margin-top: 10px;
-    }
-    .menu ul li {
+      }
+      .menu ul li {
         display: block;
         margin: 10px 0;
+      }
+
+      .logo {
+        width: 20%;
+      }
+
+      .container {
+        padding: 25px;
+      }
+
+      .comment-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .comment-date {
+        margin-top: 5px;
+      }
     }
-}
-
-</style>
-<body>
-
-  <!-- Navbar Section Starts Here -->
-  <section class="navbar">
-        <div class="navigasi">
-            <div class="logo">
-                <a href="#" title="Logo">
-                    <img src="images/logo_titem.jpg" alt="Restaurant Logo" class="img-responsive">
-                </a>
-            </div>
-
-            <div class="menu text-right">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                        <a href="informasi.html">Informasi</a>
-                    </li>
-                    <li>
-                        <a href="kontak.html">Kontak</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="clearfix"></div>
+  </style>
+  <body>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+      <div class="navigasi">
+        <div class="logo">
+          <a href="#" title="Logo">
+            <img
+              src="https://via.placeholder.com/100x60?text=Logo"
+              alt="Restaurant Logo"
+              class="img-responsive"
+            />
+          </a>
         </div>
+
+        <div class="menu text-right">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="informasi.html">Informasi</a>
+            </li>
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
     </section>
-  
-  <!-- Navbar Section Ends Here -->
 
-  <!-- Konten Utama -->
-  <div class="container">
-    <h2>Komentar Anda</h2>
+    <!-- Navbar Section Ends Here -->
 
-    <div class="form-section">
-      <form action="#" method="POST">
-        <label for="nama">Nama</label>
-        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+    <!-- Konten Utama -->
+    <div class="container">
+      <h2>Komentar Anda</h2>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+      <div class="form-section">
+        <form id="commentForm">
+          <label for="nama">Nama</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan nama Anda"
+            required
+          />
 
-        <label for="subjek">Subjek</label>
-        <input type="text" id="subjek" name="subjek" placeholder="Judul pesan" required>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukkan email Anda"
+            required
+          />
 
-        <label for="pesan">Pesan</label>
-        <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini..." required></textarea>
+          <label for="subjek">Subjek</label>
+          <input
+            type="text"
+            id="subjek"
+            name="subjek"
+            placeholder="Judul pesan"
+            required
+          />
 
-        <button type="submit" class="btn">Kirim Pesan</button>
-      </form>
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            placeholder="Tulis pesan Anda di sini..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+
+      <div class="comments-section">
+        <h3>Komentar Terbaru</h3>
+        <div id="commentsContainer" class="empty-comment">
+          Belum ada komentar. Jadilah yang pertama berkomentar!
+        </div>
+      </div>
+
+      <div class="info-section">
+        <h3>Informasi Kontak</h3>
+        <p>
+          <strong>Alamat:</strong> Jl. Ronggowarsito No. 67 Pejagoan Kebumen
+          (Depan Kampus UPB Kebumen)
+        </p>
+        <p><strong>Instagram:</strong> titiptemani_kebumen</p>
+        <p><strong>Telepon:</strong> (0895378237973)</p>
+        <p><strong>Jam Operasional:</strong> Setiap Hari, 11.00 - 21.00 WIB</p>
+      </div>
     </div>
 
-    <div class="info-section">
-      <h3>Informasi Kontak</h3>
-      <p><strong>Alamat:</strong> Jl. Ronggowarsito No. 67 Pejagoan Kebumen (Depan Kampus UPB Kebumen)</p>
-      <p><strong>Instagram:</strong> titiptemani_kebumen</p>
-      <p><strong>Telepon:</strong> (0895378237973)</p>
-      <p><strong>Jam Operasional:</strong> Setiap Hari, 11.00 - 21.00 WIB</p>
-    </div>
-  </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const commentForm = document.getElementById("commentForm");
+        const commentsContainer = document.getElementById("commentsContainer");
 
-</body>
+        // Fungsi untuk menampilkan komentar
+        function displayComment(name, subject, message) {
+          const commentCard = document.createElement("div");
+          commentCard.className = "comment-card";
+
+          // Membuat header komentar (nama dan tanggal)
+          const commentHeader = document.createElement("div");
+          commentHeader.className = "comment-header";
+
+          const commentName = document.createElement("div");
+          commentName.className = "comment-name";
+          commentName.textContent = name;
+
+          const now = new Date();
+          const options = { day: "numeric", month: "long", year: "numeric" };
+          const commentDate = document.createElement("div");
+          commentDate.className = "comment-date";
+          commentDate.textContent = now.toLocaleDateString("id-ID", options);
+
+          commentHeader.appendChild(commentName);
+          commentHeader.appendChild(commentDate);
+
+          // Membuat subjek komentar
+          const commentSubject = document.createElement("div");
+          commentSubject.className = "comment-subject";
+          commentSubject.textContent = subject;
+
+          // Membuat isi komentar
+          const commentText = document.createElement("div");
+          commentText.className = "comment-text";
+          commentText.textContent = message;
+
+          // Menyusun struktur komentar
+          commentCard.appendChild(commentHeader);
+          commentCard.appendChild(commentSubject);
+          commentCard.appendChild(commentText);
+
+          // Menambahkan komentar baru di paling atas
+          if (commentsContainer.classList.contains("empty-comment")) {
+            commentsContainer.innerHTML = "";
+            commentsContainer.classList.remove("empty-comment");
+          }
+          commentsContainer.prepend(commentCard);
+        }
+
+        // Menangani submit form
+        commentForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Mengambil nilai dari form
+          const name = document.getElementById("nama").value;
+          const subject = document.getElementById("subjek").value;
+          const message = document.getElementById("pesan").value;
+
+          // Menampilkan komentar
+          displayComment(name, subject, message);
+
+          // Reset form
+          commentForm.reset();
+
+          // Scroll ke komentar baru
+          document.querySelector(".comments-section").scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
